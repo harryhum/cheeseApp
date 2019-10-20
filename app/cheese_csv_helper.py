@@ -55,8 +55,3 @@ class CheeseCSVParser:
                 trimmed_record.append(record[index])
 
             return Cheese.from_array(trimmed_record)
-
-
-class CheeseCSVWriter:
-    def __init__(self, csv):
-        csv

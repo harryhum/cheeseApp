@@ -10,8 +10,8 @@ import click
 import click_repl
 from prompt_toolkit.history import FileHistory
 
-from app import constants
-from app.crud import load_csv
+from app import constants, crud
+from app.cheese_csv_helper import CheeseCSVParser
 from app.models import Cheese
 
 __author__ = "Harry Hum"
@@ -35,31 +35,40 @@ def cli(ctx):
 
 
 @cli.command()
-# TODO: turn path option into argument in the final edition of the program
-@click.option("--path", default=constants.FILE_PATH, help="Specify the path of the cheese csv file.")
-@click.option("--amount", default=200, help="Amount of records to read.")
+# TODO: turn path option into argument in the final edition of the program, change default amount to 200
+@click.option("--path", default=constants.READ_FILE, help="Specify the path of the cheese csv file.")
+@click.option("--amount", default=10, help="Amount of records to read.")
 def load(path, amount):
+    """Load cheeses from a file."""
     global cheese_array
-    cheese_array = load_csv(path, amount)
+    cheese_array = crud.load_csv(path, amount)
 
 
 @cli.command()
 def display():
+    """Display all loaded cheeses."""
     if not cheese_array:
         click.echo("No records loaded.")
     for cheese in cheese_array:
         click.echo(str(cheese))
 
 
-# @cli.command()
-# @cli.argument("id", type=str)
-# @cli.argument("name", type=str)
-# # TODO: add options for all attributes
-# def add(id, name):
-#     cheese = Cheese()
-#     cheese.id = id
-#     cheese.name = name
+@cli.command()
+@click.argument("id")
+@click.argument("name")
+# TODO: add options for all attributes
+def add(id, name):
+    """Add a cheese to the records."""
+    cheese = Cheese()
+    cheese.id = id
+    cheese.name = name
+    cheese_array.append(cheese)
 
+
+@cli.command()
+def write():
+    """Write records to new file."""
+    crud.write_to_csv(constants.WRITE_FILE, cheese_array)
 
 @cli.command()
 def edit():
