@@ -1,10 +1,9 @@
-"""Library for all of the business logic for the CLI application.
-"""
+"""Library for all of the persistence logic for the CLI application."""
 
 import csv
 import sys
 import traceback
-from app.cheese_csv_helper import CheeseCSVParser
+from app.util.cheese_csv_helper import CheeseCSVParser
 
 __author__ = "Harry Hum"
 __license__ = "GPL"
@@ -39,6 +38,11 @@ def load_csv(path, records):
 
 
 def write_to_csv(path, records):
+    """Load a csv with the csv reader.
+
+    :param path: Path of file to be written
+    :param records: Records to be written
+    """
     try:
         with open(path, mode="w", newline="") as csv_file:
             csv_writer = csv.writer(csv_file, delimiter=",")
@@ -52,10 +56,3 @@ def write_to_csv(path, records):
     except IOError:
         print("Error opening file: " + path)
         traceback.print_exc(file=sys.stdout)
-
-
-# def display_record(record):
-#
-# def edit_record(record):
-#
-# def delete_record(record):

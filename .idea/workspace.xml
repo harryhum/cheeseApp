@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e935c7f6-a8c2-4ab2-a246-ac6520de280d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/test/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/test/test_click.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/util/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cheese_csv_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/cheese_csv_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/cheese_csv_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/cheese_csv_helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resources/newCanadianCheeseDirectory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/newCanadianCheeseDirectory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/testCheeseDirectory.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +52,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Harry Hum\PycharmProjects\cheeseApplication\app\util" />
+      <recent name="C:\Users\Harry Hum\PycharmProjects\cheeseApplication\app\test" />
       <recent name="C:\Users\Harry Hum\PycharmProjects\cheeseApplication\app\resources" />
       <recent name="C:\Users\Harry Hum\PycharmProjects\cheeseApplication\app" />
     </key>
@@ -64,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests in test.py">
     <configuration name="cli" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cheeseApplication" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,9 +93,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_click" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cheeseApplication" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/test/test_click.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test.TestCliApp.test_load_cheeses" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="cheeseApplication" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestCliApp.test_load_cheeses&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="cheeseApplication" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/app/test/test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test.py" />
+        <item itemvalue="Python.test_click" />
         <item itemvalue="Python.cli" />
+        <item itemvalue="Python tests.Unittests for test.TestCliApp.test_load_cheeses" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +164,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571502964374</updated>
-      <workItem from="1571502978055" duration="18782000" />
+      <workItem from="1571502978055" duration="36933000" />
     </task>
     <servers />
   </component>
@@ -122,6 +183,9 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cheeseApplication$cli.coverage" NAME="cli Coverage Results" MODIFIED="1571588073151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/cheeseApplication$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1571625797481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
+    <SUITE FILE_PATH="coverage/cheeseApplication$cli.coverage" NAME="cli Coverage Results" MODIFIED="1571615738341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/cheeseApplication$test_click.coverage" NAME="test_click Coverage Results" MODIFIED="1571616617094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
+    <SUITE FILE_PATH="coverage/cheeseApplication$Unittests_for_test_TestCliApp_test_load_cheeses.coverage" NAME="Unittests for test.TestCliApp.test_load_cheeses Coverage Results" MODIFIED="1571614192148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
   </component>
 </project>

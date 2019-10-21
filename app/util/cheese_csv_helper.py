@@ -3,7 +3,7 @@
 Classes: CheeseCSVParser, CheeseCSVWriter
 """
 
-from app import constants
+from app.util import constants
 from app.models import Cheese
 
 __author__ = "Harry Hum"

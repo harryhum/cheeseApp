@@ -17,8 +17,8 @@ class Cheese(object):
                  website="", fat_content_percent="", moisture_percent="", particularities="", flavour="",
                  characteristics="", ripening="", organic="", category_type="", milk_type="", milk_treatment_type="",
                  rind_type="", last_update_date=""):
-        """
-        Constructor for Cheese.
+        """Parameterised constructor for Cheese.
+
         :param id:
         :param name:
         :param manufacturer_name:
@@ -59,15 +59,19 @@ class Cheese(object):
 
     @classmethod
     def from_array(cls, array):
-        """
-        Creates a Cheese object from an array.
-        :param array:
-        :return:
+        """Creates a Cheese object from an array.
+
+        :param array: array format of cheese attributes
+        :return: a Cheese object
         """
         return cls(array[0], array[1], array[2], array[3], array[4], array[5], array[6], array[7], array[8], array[9],
                    array[10], array[11], array[12], array[13], array[14], array[15], array[16], array[17])
 
     def to_array(self):
+        """Creates an array from a Cheese object.
+
+        :return: an array of Cheese attributes
+        """
         return [self.id, self.name, self.manufacturer_name, self.manufacturer_prov_code,
                 self.manufacturer_type, self.website, self.fat_content_percent, self.moisture_percent,
                 self.particularities, self.flavour, self.characteristics, self.ripening, self.organic,
@@ -82,7 +86,7 @@ class Cheese(object):
         return "CheeseId = {}, CheeseNameEn = {}, ManufacturerNameEn = {}, ManufacturerProvCode = {}, " \
                "ManufacturingTypeEn = {}, WebSiteEn = {}, FatContentPercent = {}, MoisturePercent = {}, " \
                "ParticularitiesEn = {}, FlavourEn = {}, CharacteristicsEn = {}, " \
-               "RipeningEn = {}, Organic = {}, CategoryTypeEn = {}, MilkTypeEn = {},MilkTypeFr, " \
+               "RipeningEn = {}, Organic = {}, CategoryTypeEn = {}, MilkTypeEn = {}, " \
                "MilkTreatmentTypeEn = {}, RindTypeEn = {}, LastUpdateDate = {}" \
             .format(self.id, self.name, self.manufacturer_name, self.manufacturer_prov_code,
                     self.manufacturer_type, self.website, self.fat_content_percent, self.moisture_percent,
